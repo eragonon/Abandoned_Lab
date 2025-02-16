@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public float distance;
     public Transform Player;
     public UnityEngine.AI.NavMeshAgent navMeshAgent;
+    public Transform[] patrolPoints;
 
     // Start is called before the first frame update
     void Start()
