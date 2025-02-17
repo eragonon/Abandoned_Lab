@@ -50821,7 +50821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255024672}
   m_Layer: 0
-  m_Name: Waypoints
+  m_Name: Enemy Waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54133,6 +54133,15 @@ MonoBehaviour:
   distance: 0
   Player: {fileID: 278186682}
   navMeshAgent: {fileID: 2053567616}
+  patrolPoints:
+  - {fileID: 1020399601}
+  - {fileID: 838136020}
+  - {fileID: 1824950509}
+  - {fileID: 1467206862}
+  - {fileID: 1081719392}
+  - {fileID: 242901678}
+  targetPoint: 0
+  speed: 3
 --- !u!136 &2053567612
 CapsuleCollider:
   m_ObjectHideFlags: 0
