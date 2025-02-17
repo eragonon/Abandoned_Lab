@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     public float distance;
     public Transform Player;
     public UnityEngine.AI.NavMeshAgent navMeshAgent;
-    public bool SetDestination(Vector3 target);
     public Transform[] patrolPoints;
     public int targetPoint;
     public float speed;
@@ -31,7 +30,7 @@ public class Enemy : MonoBehaviour
 
         if(distance < 10)
         {
-            UnityEngine.AI.NavMeshAgent.SetDestination = Player.position;
+            navMeshAgent.destination = Player.position;
         }
     }
 
