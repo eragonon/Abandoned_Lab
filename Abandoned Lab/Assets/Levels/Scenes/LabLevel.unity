@@ -35527,9 +35527,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.1934759, y: -0.7767166, z: 0.14487982, w: 0.5816256}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -14.124655, y: 1.2217393, z: -4.0561066}
   m_LocalScale: {x: 1.5386173, y: 3.4238033, z: 0.50129}
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   m_LocalPosition: {x: -21.077, y: 1.776, z: 33.644}
   m_LocalScale: {x: 1.5386173, y: 3.423803, z: 0.50129}
@@ -35537,6 +35540,9 @@ Transform:
   m_LocalPosition: {x: -14.124655, y: 1.2217393, z: -4.0561066}
   m_LocalScale: {x: 1.5386173, y: 3.4238033, z: 0.50129}
 >>>>>>> e61825bb0d569976bc281639982db585a78d7537
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
