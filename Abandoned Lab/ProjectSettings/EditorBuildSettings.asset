@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/Scenes/MainMenu.unity
+    path: Assets/Levels/Geo/MainMenu.unity
     guid: a7abe343042bb534ba6f3a97e51bbd0e
   - enabled: 1
     path: Assets/Levels/Geo/LabLevel1.unity
     guid: 136e9d52b49fd8e46aa6e8f5c980840f
+  - enabled: 1
+    path: Assets/Levels/Geo/Credits.unity
+    guid: 3f32aa43082ffe048ab7e9613da5d2dc
+  - enabled: 1
+    path: Assets/Levels/Geo/Controls.unity
+    guid: 16869822313961041b96fcbf553ca005
   m_configObjects: {}
