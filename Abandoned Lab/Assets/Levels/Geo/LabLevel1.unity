@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526bb55780eb0144889f7b6120063f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enable: 1
+  _enable: 0
   _Amplitude: 0.0008
   _frequency: 15
   _camera: {fileID: 503072064}
