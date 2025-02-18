@@ -3,6 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
+
+public class Flashlight : MonoBehaviour
+{
+    Light Light;
+
+    private void Start()
+    {
+        
+        Light = GetComponent<Light>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+
+            Light.enabled = !Light.enabled;
+        }           
+     }
+}
 public class PlayerMovement : MonoBehaviour
 {
     public Camera playerCamera;
@@ -34,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         // Set initial height
         targetHeight = defaultHeight;
     }
+
+    
 
     void Update()
     {
@@ -127,4 +149,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
+
+
+
 }
