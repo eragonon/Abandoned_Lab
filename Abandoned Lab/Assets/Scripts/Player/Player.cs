@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-
 public class PlayerMovement : MonoBehaviour
 {
     public Camera playerCamera;
@@ -26,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     private bool isCurrentlyRunning = false; // Tracks running status
     private float targetHeight; // Target height for crouching/standing
 
+    // Add a reference to the pause state
+    public bool isPaused = false; // Track the pause state
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -38,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (isPaused) return; // Skip the update if paused
+
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
@@ -128,7 +132,4 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
     }
-
-
-
 }
