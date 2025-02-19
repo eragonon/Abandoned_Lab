@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class AIController : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class AIController : MonoBehaviour
         m_IsPatrol = true;
         m_CaughtPlayer = false;
         m_PlayerInRange = false;
+        m_PlayerNear = false;
         m_WaitTime = startWaitTime;
         m_TimeToRotate = timeToRotate;
 
@@ -51,7 +53,7 @@ public class AIController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         EnvironmentView();
 
@@ -127,7 +129,7 @@ public class AIController : MonoBehaviour
                 else
                 {
                     Stop();
-                    m_WaitTime = startWaitTime;
+                    m_WaitTime -= Time.deltaTime;
                 }
             }
         }
@@ -206,4 +208,13 @@ public class AIController : MonoBehaviour
             m_PlayerPosition = player.transform.position;
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player")) // Check if the player is the one colliding
+        {
+            Debug.Log("Player hit! Loading Game Over scene...");
+            SceneManager.LoadScene("GameOver"); // Replace with your actual scene name
+        }
+    }
 }
+
