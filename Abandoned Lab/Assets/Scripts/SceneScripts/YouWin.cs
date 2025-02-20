@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOver : MonoBehaviour
+public class Youwin : MonoBehaviour
 {
     public void PlayAgain()
     {
-        SceneManager.LoadSceneAsync("LabLevel");
+        SceneManager.LoadSceneAsync("LabLevel1");
     }
 
-    public void Exit()
+    public void QuitGame()
     {
         Application.Quit();
 
@@ -20,5 +20,5 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("MainMenu");
     }
-
 }
+
