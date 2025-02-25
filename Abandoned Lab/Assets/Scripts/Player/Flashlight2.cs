@@ -2,13 +2,19 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Flashliight : MonoBehaviour
+public class Flashlight2 : MonoBehaviour
 {
-    Light liight;
+    private Light flashlight;  // Reference to the Light component
+
+    [Header("Flashlight Settings")]
+    public bool startWithFlashlightOn = false;  // Set this in the Inspector to control flashlight start state
 
     void Start()
     {
-        liight = GetComponent<Light>();
+        flashlight = GetComponent<Light>();  // Get the Light component attached to this GameObject
+
+        // Set the flashlight's initial state based on the Inspector value
+        flashlight.enabled = startWithFlashlightOn;
     }
 
     void Update()
@@ -16,7 +22,7 @@ public class Flashliight : MonoBehaviour
         // Only allow flashlight toggle if the game is not paused
         if (Input.GetKeyUp(KeyCode.F))
         {
-            liight.enabled = !liight.enabled;
+            flashlight.enabled = !flashlight.enabled;  // Toggle the flashlight state
         }
     }
 }

@@ -44,7 +44,7 @@ public class UIFadeInOut : MonoBehaviour
         canvasGroup.alpha = targetAlpha;
 
         // Wait for 3 seconds before starting fade-out
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         // Start fading out the UI element
         float fadeOutDuration = 1f;  // Duration of the fade-out effect
