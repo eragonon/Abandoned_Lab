@@ -9,7 +9,7 @@ public class PauseMenus : MonoBehaviour
     public GameObject pauseMenu;  // Pause Menu UI
     public Button resumeButton;   // Resume Button (Assign in Inspector)
 
-    private bool isPaused = false;
+    public static bool isPaused = false;
     public PlayerMovement playerMovementScript;
 
     void Start()
