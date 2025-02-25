@@ -61,6 +61,9 @@ public class VialScript : MonoBehaviour
     {
         Debug.Log("Player picked up the vial!");
 
+        // Destroy the vial object immediately
+        Destroy(gameObject);
+
         // Activate the exit collider after the vial is picked up
         exitCollider.SetActive(true);
 
@@ -86,6 +89,9 @@ public class VialScript : MonoBehaviour
         // Wait for 3 seconds before starting to fade
         yield return new WaitForSeconds(3f);
 
+        // Ensure the objective UI is active during the fade process
+        objectiveUI.SetActive(true);
+
         // Gradually reduce the alpha value of the objective UI to 0 (fade out)
         float duration = 1f;  // Duration of the fade-out effect
         float startAlpha = objectiveCanvasGroup.alpha;
@@ -107,10 +113,6 @@ public class VialScript : MonoBehaviour
 
         // Optionally, disable the objective UI after it fades out completely
         objectiveUI.SetActive(false);
-
-        // Destroy the vial object after the fade-out is complete
-        Debug.Log("Destroying the vial object.");
-        Destroy(gameObject);
     }
 
     // This function can be attached to the exit collider's trigger
