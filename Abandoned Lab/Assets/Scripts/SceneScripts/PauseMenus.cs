@@ -2,71 +2,84 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI; // Required for UI buttons
 
 public class PauseMenus : MonoBehaviour
 {
-    public GameObject pauseMenu;
-    public bool isPaused;
+    public GameObject pauseMenu;  // Pause Menu UI
+    public Button resumeButton;   // Resume Button (Assign in Inspector)
 
-    // Reference to PlayerMovement script
+    private bool isPaused = false;
     public PlayerMovement playerMovementScript;
 
-    // Start is called before the first frame update
     void Start()
     {
+        // Ensure pause menu starts hidden
         pauseMenu.SetActive(false);
-        playerMovementScript.isPaused = false;  // Player movement is not paused at the start
+        isPaused = false;
+        playerMovementScript.isPaused = false;
+
+        // Manually assign Resume button function
+        if (resumeButton != null)
+        {
+            resumeButton.onClick.RemoveAllListeners(); // Clear previous listeners
+            resumeButton.onClick.AddListener(TogglePause); // Calls Pause/Resume like the 'P' key
+        }
+        else
+        {
+            Debug.LogError("Resume button is NOT assigned in the Inspector!");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.P))
+        // Press 'P' to toggle pause state
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            if (isPaused)
-            {
-                ResumeGame();
-            }
-            else
-            {
-                PauseGame();
-            }
+            TogglePause();
+        }
+    }
+
+    public void TogglePause()
+    {
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
         }
     }
 
     public void PauseGame()
     {
+        Debug.Log("Pausing game...");
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f; // Pause the game
+        Time.timeScale = 0f; // Freeze game time
         isPaused = true;
-
-        // Disable player movement and camera control
         playerMovementScript.isPaused = true;
 
-        // Unlock cursor
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
     public void ResumeGame()
     {
-        Debug.Log("Resuming game...");  // Add this line for debugging
+        Debug.Log("ResumeGame() function is called!"); // Debugging output
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f; // Resume the game
+        Time.timeScale = 1f; // Resume game time
         isPaused = false;
-
-        // Enable player movement and camera control
         playerMovementScript.isPaused = false;
 
-        // Lock cursor again
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     public void MainMenu()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu"); // You can replace this with your actual main menu scene
+        Time.timeScale = 1f; // Ensure time resumes before switching scenes
+        SceneManager.LoadScene("MainMenu"); // Replace with actual scene name
     }
 
     public void Quit()
