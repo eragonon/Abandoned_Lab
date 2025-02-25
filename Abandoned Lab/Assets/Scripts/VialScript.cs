@@ -107,6 +107,10 @@ public class VialScript : MonoBehaviour
 
         // Optionally, disable the objective UI after it fades out completely
         objectiveUI.SetActive(false);
+
+        // Destroy the vial object after the fade-out is complete
+        Debug.Log("Destroying the vial object.");
+        Destroy(gameObject);
     }
 
     // This function can be attached to the exit collider's trigger
@@ -122,7 +126,3 @@ public class VialScript : MonoBehaviour
         }
     }
 }
-
-
-
-
