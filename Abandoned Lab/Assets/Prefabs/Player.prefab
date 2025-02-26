@@ -1,5 +1,37 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1711939889508874001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8941349295491564227}
+  m_Layer: 0
+  m_Name: Camholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8941349295491564227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711939889508874001}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.293379, y: 0.8564501, z: 0.8358578}
+  m_LocalScale: {x: 1.6296781, y: 1.1462916, z: 1.6296781}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6970410103399775936}
+  m_Father: {fileID: 7789966939972964483}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3412205470868015184
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,11 +59,11 @@ Transform:
   m_GameObject: {fileID: 3412205470868015184}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0040273448, y: -0, z: -0, w: 0.99999195}
-  m_LocalPosition: {x: -0.013, y: 0.612, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.80161774, y: -0.21325304, z: -0.51289743}
+  m_LocalScale: {x: 0.61361814, y: 0.87236154, z: 0.61363494}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7789966939972964483}
+  m_Father: {fileID: 8941349295491564227}
   m_LocalEulerAnglesHint: {x: 0.462, y: 0, z: 0}
 --- !u!20 &2051662340546501328
 Camera:
@@ -232,7 +264,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 902559186852324699}
-  - {fileID: 6970410103399775936}
+  - {fileID: 8941349295491564227}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &1204991472907660917
@@ -284,6 +316,7 @@ MonoBehaviour:
   crouchHeight: 1
   crouchSpeed: 3
   crouchTransitionSpeed: 15
+  isPaused: 0
 --- !u!136 &8503689941497990849
 CapsuleCollider:
   m_ObjectHideFlags: 0
