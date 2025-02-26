@@ -1926,19 +1926,19 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.9716981, g: 0.8649111, b: 0.38042897, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 30
-  m_SpotAngle: 50
+  m_SpotAngle: 35.22429
   m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -1958,7 +1958,7 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -2597,10 +2597,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d935d45d46cce1441b2c646b5a0be323, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.8
+  m_Pitch: 0.6
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -2683,7 +2683,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &656794941
+--- !u!114 &656794945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2696,7 +2696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
-  _Amplitude: 0.0017
+  _Amplitude: 0.0099
   _frequency: 15
   _camera: {fileID: 1446763479}
   _cameraHolder: {fileID: 832383490}
@@ -5658,7 +5658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: 505}
+  m_AnchoredPosition: {x: -182, y: 490.3}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031754823
@@ -5685,8 +5685,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 46fe3d8e42a8cbb43b7b5e1b9614e120, type: 2}
+  m_sharedMaterial: {fileID: -4122122647519436668, guid: 46fe3d8e42a8cbb43b7b5e1b9614e120, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6382,13 +6382,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160542272}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05000019, y: 0, z: 5.0700006}
+  m_LocalRotation: {x: -0.64309734, y: -0, z: -0, w: 0.76578444}
+  m_LocalPosition: {x: 0.23, y: 0, z: 4.915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 853359576}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -80.046, y: 0, z: 0}
 --- !u!1 &1183067767
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,7 +10369,7 @@ PrefabInstance:
       addedObject: {fileID: 656794938}
     - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 656794941}
+      addedObject: {fileID: 656794945}
   m_SourcePrefab: {fileID: 100100000, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
