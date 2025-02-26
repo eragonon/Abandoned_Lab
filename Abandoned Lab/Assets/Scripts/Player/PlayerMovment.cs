@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -16,6 +17,14 @@ public class PlayerMovement : MonoBehaviour
     public float crouchHeight = 1f;
     public float crouchSpeed = 3f;
     public float crouchTransitionSpeed = 15f; // Speed of crouch height transition
+
+    public Image StaminaBar;
+
+    public float Stamina, MaxStamina; // Ensure MaxStamina is set in the Inspector
+
+    public float RunCost = 10f; // Stamina cost per second while running
+    public float ChargeRate = 5f; // Stamina recharge rate per second
+    private Coroutine recharge;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -36,6 +45,13 @@ public class PlayerMovement : MonoBehaviour
 
         // Set initial height
         targetHeight = defaultHeight;
+
+        // Initialize Stamina
+        Stamina = MaxStamina; // Ensure Stamina starts at MaxStamina
+        if (StaminaBar != null)
+        {
+            StaminaBar.fillAmount = Stamina / MaxStamina; // Update the stamina bar UI
+        }
     }
 
     void Update()
@@ -71,13 +87,32 @@ public class PlayerMovement : MonoBehaviour
         // Determine movement speed
         if (Input.GetKey(KeyCode.LeftShift) && isGrounded && !isCrouching)
         {
-            isCurrentlyRunning = true; // Start running if grounded and shift is held
+            if (Stamina > 0)
+            {
+                isCurrentlyRunning = true; // Start running if grounded, shift is held, and stamina is available
+
+                // Drain stamina
+                Stamina -= RunCost * Time.deltaTime;
+                if (Stamina < 0) Stamina = 0;
+                StaminaBar.fillAmount = Stamina / MaxStamina;
+
+                Debug.Log("Running, Stamina: " + Stamina);
+
+                // Stop any ongoing recharge coroutine
+                if (recharge != null) StopCoroutine(recharge);
+                recharge = StartCoroutine(RechargeStamina());
+            }
+            else
+            {
+                isCurrentlyRunning = false; // Stop running if stamina is depleted
+            }
         }
         else if (isGrounded)
         {
             isCurrentlyRunning = false; // Stop running if grounded and shift is not held
         }
 
+        // Calculate movement speed based on current state (crouching, running, or walking)
         float currentSpeed = isCrouching ? crouchSpeed : (isCurrentlyRunning ? runSpeed : walkSpeed);
         float curSpeedX = canMove ? currentSpeed * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? currentSpeed * Input.GetAxis("Horizontal") : 0;
@@ -130,6 +165,19 @@ public class PlayerMovement : MonoBehaviour
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+    }
+
+    private IEnumerator RechargeStamina()
+    {
+        yield return new WaitForSeconds(1f); // Wait 1 second before recharging
+
+        while (Stamina < MaxStamina)
+        {
+            Stamina += ChargeRate * Time.deltaTime; // Recharge stamina over time
+            if (Stamina > MaxStamina) Stamina = MaxStamina;
+            StaminaBar.fillAmount = Stamina / MaxStamina; // Update the stamina bar UI
+            yield return null; // Wait for the next frame
         }
     }
 }
