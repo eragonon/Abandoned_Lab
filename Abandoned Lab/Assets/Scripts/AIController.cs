@@ -192,6 +192,11 @@ public class AIController : MonoBehaviour
                 {
                     m_PlayerInRange = true;
                     m_IsPatrol = false;
+
+                    if (!detectionAudioSource.isPlaying)
+                    {
+                        detectionAudioSource.PlayOneShot(detectionClip);
+                    }
                 }
                 else
                 {
