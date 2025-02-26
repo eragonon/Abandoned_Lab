@@ -1356,6 +1356,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeIterations: 4
   edgeDistance: 0.5
+  detectionClip: {fileID: 0}
   waypoints:
   - {fileID: 716376155}
   - {fileID: 578166669}
@@ -14639,6 +14640,7 @@ MonoBehaviour:
   meshResolution: 1
   edgeIterations: 4
   edgeDistance: 0.5
+  detectionClip: {fileID: 8300000, guid: a52485a3c2c04ef4f961eed35ad596ef, type: 3}
   waypoints:
   - {fileID: 1020399601}
   - {fileID: 1905779653}
@@ -14707,8 +14709,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: b37ab2de4dfacb142b7db69cbd59beae, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
