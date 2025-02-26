@@ -19,6 +19,8 @@ public class AIController : MonoBehaviour
     public float meshResolution = 1f;
     public int edgeIterations = 4;
     public float edgeDistance = 0.5f;
+    public AudioClip detectionClip;
+    private AudioSource detectionAudioSource;
 
     public Transform[] waypoints;
     int m_CurrentWaypointIndex;
@@ -50,6 +52,12 @@ public class AIController : MonoBehaviour
         navMeshAgent.isStopped = false; 
         navMeshAgent.speed = speedWalk;
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+
+        detectionAudioSource = GetComponent<AudioSource>();
+        if (detectionAudioSource == null)
+        {
+            detectionAudioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame
@@ -193,7 +201,7 @@ public class AIController : MonoBehaviour
                     m_PlayerInRange = true;
                     m_IsPatrol = false;
 
-                    if (!detectionAudioSource.isPlaying)
+                    if (!detectionAudioSource.isPlaying && detectionClip != null)
                     {
                         detectionAudioSource.PlayOneShot(detectionClip);
                     }
