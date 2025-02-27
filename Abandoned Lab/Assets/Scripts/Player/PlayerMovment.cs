@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
@@ -36,6 +37,24 @@ public class PlayerMovement : MonoBehaviour
 
     // Add a reference to the pause state
     public bool isPaused = false; // Track the pause state
+
+    // controller 
+    private InputAction movement;
+
+    private void Awake()
+    {
+        movement = PlayerControls.FindActionMap("Player").FindAction("Movement");
+    }
+
+    private void OnEnable()
+    {
+        movement.Enable();
+    }
+
+    private void OnDisable()
+    {
+        movement.Disable();
+    }
 
     void Start()
     {

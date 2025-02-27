@@ -12,7 +12,7 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Crouch",
@@ -21,7 +21,7 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Movement",
@@ -30,7 +30,7 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Camera",
@@ -39,7 +39,7 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Flashlight",
@@ -48,7 +48,7 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Pickup",
@@ -57,7 +57,7 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Pause Game",
@@ -66,17 +66,17 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "09bd9b3a-b0c1-4a9a-9fdf-9b1cb9bad2d6",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -84,10 +84,10 @@
                 {
                     "name": "",
                     "id": "a2381709-4df6-4484-a9e8-a25d979aee27",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -95,10 +95,10 @@
                 {
                     "name": "",
                     "id": "7a988c38-81ca-40d2-9257-27b6cfd65bb3",
-                    "path": "",
+                    "path": "<XInputController>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -117,7 +117,7 @@
                 {
                     "name": "up",
                     "id": "28c5620f-dbf4-48cb-a5d1-0611b9957b50",
-                    "path": "",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -128,7 +128,7 @@
                 {
                     "name": "down",
                     "id": "39e9e77a-d71e-4f86-87ea-4e9718c7675a",
-                    "path": "",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -139,7 +139,7 @@
                 {
                     "name": "left",
                     "id": "eeaaf6c2-75b2-4ae7-88b8-8446c23a8285",
-                    "path": "",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -150,7 +150,7 @@
                 {
                     "name": "right",
                     "id": "130008b5-a82e-4556-8fa6-18edb4a1c5c8",
-                    "path": "",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -161,10 +161,10 @@
                 {
                     "name": "",
                     "id": "0d6a615c-15ad-4e87-8d6c-af2947e53f1e",
-                    "path": "",
+                    "path": "<XInputController>/rightStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -227,10 +227,10 @@
                 {
                     "name": "",
                     "id": "038e7afc-f21d-4a08-bd02-41df14a578ec",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<XInputController>/leftStickPress",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Flashlight",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -238,10 +238,10 @@
                 {
                     "name": "",
                     "id": "2e1433dc-35ea-458f-ba50-6ed7fccc15de",
-                    "path": "<Gamepad>/buttonWest",
+                    "path": "<XInputController>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Pickup",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -249,10 +249,10 @@
                 {
                     "name": "",
                     "id": "15edba56-8c5f-4994-9347-4a06d4db8db6",
-                    "path": "<Gamepad>/start",
+                    "path": "<XInputController>/start",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Pause Game",
                     "isComposite": false,
                     "isPartOfComposite": false
