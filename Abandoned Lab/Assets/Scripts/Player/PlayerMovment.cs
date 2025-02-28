@@ -38,24 +38,6 @@ public class PlayerMovement : MonoBehaviour
     // Add a reference to the pause state
     public bool isPaused = false; // Track the pause state
 
-    // controller 
-    private InputAction movement;
-
-    private void Awake()
-    {
-        movement = PlayerControls.FindActionMap("Player").FindAction("Movement");
-    }
-
-    private void OnEnable()
-    {
-        movement.Enable();
-    }
-
-    private void OnDisable()
-    {
-        movement.Disable();
-    }
-
     void Start()
     {
         characterController = GetComponent<CharacterController>();
