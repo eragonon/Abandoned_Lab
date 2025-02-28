@@ -10,7 +10,7 @@ public class DoorController : MonoBehaviour
     public float moveDistance = 3.0f;
 
     // Delay before the door starts moving (in seconds)
-    public float delaySeconds = 1.0f;
+    public float delaySeconds = 2.5f;
 
     // Original position of the door
     private Vector3 originalPosition;

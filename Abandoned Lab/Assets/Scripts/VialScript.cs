@@ -12,6 +12,12 @@ public class VialScript : MonoBehaviour
     private bool vialPickedUp = false;  // Flag to track if the vial has been picked up
     private bool isPlayerNearby = false; // Flag to check if player is near the vial
 
+    // Public property to access vialPickedUp
+    public bool IsVialPickedUp
+    {
+        get { return vialPickedUp; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
