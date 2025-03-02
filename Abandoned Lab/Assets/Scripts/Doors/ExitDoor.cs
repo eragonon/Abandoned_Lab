@@ -18,6 +18,9 @@ public class DoorController2 : MonoBehaviour
     // Flag to check if the door should move
     private bool shouldMoveDoor = false;
 
+    // Flag to ensure the coroutine only runs once
+    private bool isCoroutineRunning = false;
+
     void Start()
     {
         // Store the starting position of the door
@@ -33,10 +36,11 @@ public class DoorController2 : MonoBehaviour
     void Update()
     {
         // Check if the vial has been picked up (via VialScript)
-        if (vialScript != null && vialScript.IsVialPickedUp && !shouldMoveDoor)
+        if (vialScript != null && vialScript.IsVialPickedUp && !shouldMoveDoor && !isCoroutineRunning)
         {
             // Start a coroutine to delay the door movement
             StartCoroutine(DelayDoorMovement(doorMoveDelay));
+            isCoroutineRunning = true; // Prevent multiple coroutines
         }
 
         // Move the door if the flag is true
