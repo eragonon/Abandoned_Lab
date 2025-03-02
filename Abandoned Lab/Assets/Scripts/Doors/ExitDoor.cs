@@ -5,7 +5,7 @@ public class DoorController2 : MonoBehaviour
 {
     // Door movement settings
     public float doorMoveSpeed = 2.0f; // Speed at which the door moves
-    public float doorMoveDistance = 3.0f; // Distance the door should move
+    public float doorMoveDistance = 3.0f; // Distance the door should move to the left
     public float doorMoveDelay = 1.0f; // Delay before the door starts moving after the vial is picked up
 
     // Reference to the VialScript
