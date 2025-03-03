@@ -28,85 +28,74 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
             ""id"": ""9566ce5c-0088-48f0-a592-822b65d17a9e"",
             ""actions"": [
                 {
-                    ""name"": ""Jump"",
-                    ""type"": ""Button"",
-                    ""id"": ""370c7a62-7b28-4166-a0ba-7da20476c9b9"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
                     ""name"": ""Crouch"",
                     ""type"": ""Button"",
                     ""id"": ""337211ca-95f0-44ec-978b-c7ec0d066a5e"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap"",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Movement"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Value"",
                     ""id"": ""5969be3d-612f-448b-92d0-63693c1fb00a"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Stick"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold,Press"",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Camera"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Value"",
                     ""id"": ""eac398f5-9f89-4d53-a2dd-5309c3f845d9"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Stick"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Flashlight"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""b0db7560-2fe8-4584-be13-7b7bf7f2c7f0"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Touch"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Pickup"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""0cb094f1-fe66-4660-a073-3e3e92c84888"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Touch"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Pause Game"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""8bdd1207-1dd0-40a8-9e8e-94b26c20f896"",
+                    ""expectedControlType"": ""Touch"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Select"",
+                    ""type"": ""Button"",
+                    ""id"": ""b1709e5f-ec4c-40fd-8b85-cc96ab26f171"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""09bd9b3a-b0c1-4a9a-9fdf-9b1cb9bad2d6"",
-                    ""path"": ""<XInputController>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Xbox Control Scheme"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""a2381709-4df6-4484-a9e8-a25d979aee27"",
-                    ""path"": ""<XInputController>/buttonEast"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Xbox Control Scheme"",
@@ -278,6 +267,293 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
                     ""action"": ""Pause Game"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""52e12138-a6c5-4456-a21f-6d1e4003f27b"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Xbox Control Scheme"",
+                    ""action"": ""Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""39ead1da-0703-43f1-bf1e-d5d579707242"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Select"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""PlayerAct"",
+            ""id"": ""be9518d7-c1d5-442a-bc38-3006f1ca1a8d"",
+            ""actions"": [
+                {
+                    ""name"": ""Crouch"",
+                    ""type"": ""Button"",
+                    ""id"": ""f1438680-1f20-4920-b3bd-c8ba0d406241"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Flashlight"",
+                    ""type"": ""Button"",
+                    ""id"": ""92a91eb8-d89b-49de-82ff-29686792c6a0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pickup"",
+                    ""type"": ""Button"",
+                    ""id"": ""9fb78981-e1fb-4ec7-9b62-f4a95d0209b1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""2e6dbf2a-3ed3-4e92-97bc-7810e5703adc"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Camera"",
+                    ""type"": ""Button"",
+                    ""id"": ""3b84ebd1-16d0-4a0c-b4f7-b129cf6fc5a0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu Selection"",
+                    ""type"": ""Value"",
+                    ""id"": ""38907368-97d9-4401-8820-85a5a3e164ce"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Other Menu Selection"",
+                    ""type"": ""Value"",
+                    ""id"": ""28db1640-e75c-4786-89a8-1385355ca7c5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""1cec5133-cdb8-4558-9ad6-5db3870aa532"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""00f68099-f47f-4f9c-91f7-d85ff185aa96"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""c6b9e37f-75c4-4095-b500-502176cecf75"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""178af924-2ae6-4047-afdb-992089b36fa0"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Flashlight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cb390259-0eca-43d0-952f-c635c35894eb"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pickup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""156fbfe7-60d6-4b54-9f1c-30a49bc646cf"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3b48caf4-2e1d-4891-ab4f-f349b2135878"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""50e634bd-b75f-4efa-af48-33fce379fab2"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu Selection"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""502a37bf-e161-4b85-952c-458625ab7939"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""42544b6e-616f-43a1-8b8f-7483adbbc878"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""a7e7c2a6-b7fd-4b7e-9de0-ed8f98d79c1d"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""a751819b-c59d-48c3-8812-18234b147000"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1c1ff8fa-3f1d-40e1-9957-8bdf6f099fad"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Other Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""2ea76908-b439-4951-8ae9-074f6712f53a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Other Menu Selection"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""fae4f971-0f0c-42c9-b3bb-00f318b8d4ba"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Other Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""809d56fc-aa6b-4129-a62b-298076b5b83a"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Other Menu Selection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f06589d8-c533-49a5-a6a4-77de01468ebd"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1326e7ea-1d45-439f-80b1-861c65dbd130"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -298,18 +574,30 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Camera = m_Player.FindAction("Camera", throwIfNotFound: true);
         m_Player_Flashlight = m_Player.FindAction("Flashlight", throwIfNotFound: true);
         m_Player_Pickup = m_Player.FindAction("Pickup", throwIfNotFound: true);
         m_Player_PauseGame = m_Player.FindAction("Pause Game", throwIfNotFound: true);
+        m_Player_Select = m_Player.FindAction("Select", throwIfNotFound: true);
+        // PlayerAct
+        m_PlayerAct = asset.FindActionMap("PlayerAct", throwIfNotFound: true);
+        m_PlayerAct_Crouch = m_PlayerAct.FindAction("Crouch", throwIfNotFound: true);
+        m_PlayerAct_Flashlight = m_PlayerAct.FindAction("Flashlight", throwIfNotFound: true);
+        m_PlayerAct_Pickup = m_PlayerAct.FindAction("Pickup", throwIfNotFound: true);
+        m_PlayerAct_Move = m_PlayerAct.FindAction("Move", throwIfNotFound: true);
+        m_PlayerAct_Camera = m_PlayerAct.FindAction("Camera", throwIfNotFound: true);
+        m_PlayerAct_MenuSelection = m_PlayerAct.FindAction("Menu Selection", throwIfNotFound: true);
+        m_PlayerAct_OtherMenuSelection = m_PlayerAct.FindAction("Other Menu Selection", throwIfNotFound: true);
+        m_PlayerAct_Pause = m_PlayerAct.FindAction("Pause", throwIfNotFound: true);
+        m_PlayerAct_Sprint = m_PlayerAct.FindAction("Sprint", throwIfNotFound: true);
     }
 
     ~@InputPrimary()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, InputPrimary.Player.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_PlayerAct.enabled, "This will cause a leak and performance issues, InputPrimary.PlayerAct.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -371,24 +659,24 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
     // Player
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
-    private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Crouch;
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Camera;
     private readonly InputAction m_Player_Flashlight;
     private readonly InputAction m_Player_Pickup;
     private readonly InputAction m_Player_PauseGame;
+    private readonly InputAction m_Player_Select;
     public struct PlayerActions
     {
         private @InputPrimary m_Wrapper;
         public PlayerActions(@InputPrimary wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Crouch => m_Wrapper.m_Player_Crouch;
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Camera => m_Wrapper.m_Player_Camera;
         public InputAction @Flashlight => m_Wrapper.m_Player_Flashlight;
         public InputAction @Pickup => m_Wrapper.m_Player_Pickup;
         public InputAction @PauseGame => m_Wrapper.m_Player_PauseGame;
+        public InputAction @Select => m_Wrapper.m_Player_Select;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -398,9 +686,6 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
-            @Jump.started += instance.OnJump;
-            @Jump.performed += instance.OnJump;
-            @Jump.canceled += instance.OnJump;
             @Crouch.started += instance.OnCrouch;
             @Crouch.performed += instance.OnCrouch;
             @Crouch.canceled += instance.OnCrouch;
@@ -419,13 +704,13 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
             @PauseGame.started += instance.OnPauseGame;
             @PauseGame.performed += instance.OnPauseGame;
             @PauseGame.canceled += instance.OnPauseGame;
+            @Select.started += instance.OnSelect;
+            @Select.performed += instance.OnSelect;
+            @Select.canceled += instance.OnSelect;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
         {
-            @Jump.started -= instance.OnJump;
-            @Jump.performed -= instance.OnJump;
-            @Jump.canceled -= instance.OnJump;
             @Crouch.started -= instance.OnCrouch;
             @Crouch.performed -= instance.OnCrouch;
             @Crouch.canceled -= instance.OnCrouch;
@@ -444,6 +729,9 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
             @PauseGame.started -= instance.OnPauseGame;
             @PauseGame.performed -= instance.OnPauseGame;
             @PauseGame.canceled -= instance.OnPauseGame;
+            @Select.started -= instance.OnSelect;
+            @Select.performed -= instance.OnSelect;
+            @Select.canceled -= instance.OnSelect;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -461,6 +749,116 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // PlayerAct
+    private readonly InputActionMap m_PlayerAct;
+    private List<IPlayerActActions> m_PlayerActActionsCallbackInterfaces = new List<IPlayerActActions>();
+    private readonly InputAction m_PlayerAct_Crouch;
+    private readonly InputAction m_PlayerAct_Flashlight;
+    private readonly InputAction m_PlayerAct_Pickup;
+    private readonly InputAction m_PlayerAct_Move;
+    private readonly InputAction m_PlayerAct_Camera;
+    private readonly InputAction m_PlayerAct_MenuSelection;
+    private readonly InputAction m_PlayerAct_OtherMenuSelection;
+    private readonly InputAction m_PlayerAct_Pause;
+    private readonly InputAction m_PlayerAct_Sprint;
+    public struct PlayerActActions
+    {
+        private @InputPrimary m_Wrapper;
+        public PlayerActActions(@InputPrimary wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Crouch => m_Wrapper.m_PlayerAct_Crouch;
+        public InputAction @Flashlight => m_Wrapper.m_PlayerAct_Flashlight;
+        public InputAction @Pickup => m_Wrapper.m_PlayerAct_Pickup;
+        public InputAction @Move => m_Wrapper.m_PlayerAct_Move;
+        public InputAction @Camera => m_Wrapper.m_PlayerAct_Camera;
+        public InputAction @MenuSelection => m_Wrapper.m_PlayerAct_MenuSelection;
+        public InputAction @OtherMenuSelection => m_Wrapper.m_PlayerAct_OtherMenuSelection;
+        public InputAction @Pause => m_Wrapper.m_PlayerAct_Pause;
+        public InputAction @Sprint => m_Wrapper.m_PlayerAct_Sprint;
+        public InputActionMap Get() { return m_Wrapper.m_PlayerAct; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerActActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayerActActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerActActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerActActionsCallbackInterfaces.Add(instance);
+            @Crouch.started += instance.OnCrouch;
+            @Crouch.performed += instance.OnCrouch;
+            @Crouch.canceled += instance.OnCrouch;
+            @Flashlight.started += instance.OnFlashlight;
+            @Flashlight.performed += instance.OnFlashlight;
+            @Flashlight.canceled += instance.OnFlashlight;
+            @Pickup.started += instance.OnPickup;
+            @Pickup.performed += instance.OnPickup;
+            @Pickup.canceled += instance.OnPickup;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
+            @Camera.started += instance.OnCamera;
+            @Camera.performed += instance.OnCamera;
+            @Camera.canceled += instance.OnCamera;
+            @MenuSelection.started += instance.OnMenuSelection;
+            @MenuSelection.performed += instance.OnMenuSelection;
+            @MenuSelection.canceled += instance.OnMenuSelection;
+            @OtherMenuSelection.started += instance.OnOtherMenuSelection;
+            @OtherMenuSelection.performed += instance.OnOtherMenuSelection;
+            @OtherMenuSelection.canceled += instance.OnOtherMenuSelection;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
+            @Sprint.started += instance.OnSprint;
+            @Sprint.performed += instance.OnSprint;
+            @Sprint.canceled += instance.OnSprint;
+        }
+
+        private void UnregisterCallbacks(IPlayerActActions instance)
+        {
+            @Crouch.started -= instance.OnCrouch;
+            @Crouch.performed -= instance.OnCrouch;
+            @Crouch.canceled -= instance.OnCrouch;
+            @Flashlight.started -= instance.OnFlashlight;
+            @Flashlight.performed -= instance.OnFlashlight;
+            @Flashlight.canceled -= instance.OnFlashlight;
+            @Pickup.started -= instance.OnPickup;
+            @Pickup.performed -= instance.OnPickup;
+            @Pickup.canceled -= instance.OnPickup;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
+            @Camera.started -= instance.OnCamera;
+            @Camera.performed -= instance.OnCamera;
+            @Camera.canceled -= instance.OnCamera;
+            @MenuSelection.started -= instance.OnMenuSelection;
+            @MenuSelection.performed -= instance.OnMenuSelection;
+            @MenuSelection.canceled -= instance.OnMenuSelection;
+            @OtherMenuSelection.started -= instance.OnOtherMenuSelection;
+            @OtherMenuSelection.performed -= instance.OnOtherMenuSelection;
+            @OtherMenuSelection.canceled -= instance.OnOtherMenuSelection;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
+            @Sprint.started -= instance.OnSprint;
+            @Sprint.performed -= instance.OnSprint;
+            @Sprint.canceled -= instance.OnSprint;
+        }
+
+        public void RemoveCallbacks(IPlayerActActions instance)
+        {
+            if (m_Wrapper.m_PlayerActActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayerActActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerActActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerActActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public PlayerActActions @PlayerAct => new PlayerActActions(this);
     private int m_XboxControlSchemeSchemeIndex = -1;
     public InputControlScheme XboxControlSchemeScheme
     {
@@ -472,12 +870,24 @@ public partial class @InputPrimary: IInputActionCollection2, IDisposable
     }
     public interface IPlayerActions
     {
-        void OnJump(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
         void OnCamera(InputAction.CallbackContext context);
         void OnFlashlight(InputAction.CallbackContext context);
         void OnPickup(InputAction.CallbackContext context);
         void OnPauseGame(InputAction.CallbackContext context);
+        void OnSelect(InputAction.CallbackContext context);
+    }
+    public interface IPlayerActActions
+    {
+        void OnCrouch(InputAction.CallbackContext context);
+        void OnFlashlight(InputAction.CallbackContext context);
+        void OnPickup(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
+        void OnCamera(InputAction.CallbackContext context);
+        void OnMenuSelection(InputAction.CallbackContext context);
+        void OnOtherMenuSelection(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
     }
 }
