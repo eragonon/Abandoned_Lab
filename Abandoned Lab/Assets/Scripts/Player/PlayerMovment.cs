@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
     private bool isCurrentlyRunning = false; // Tracks running status
     private float targetHeight; // Target height for crouching/standing
+    private bool isCrouching = false; // Track crouching state
 
     // Add a reference to the pause state
     public bool isPaused = false; // Track the pause state
@@ -65,21 +66,17 @@ public class PlayerMovement : MonoBehaviour
         // Determine if the player is grounded
         bool isGrounded = characterController.isGrounded;
 
-        // Crouch logic (press and hold)
-        if (Input.GetKey(KeyCode.LeftControl) && canMove)
+        // Crouch toggle logic (toggle when the crouch button is pressed)
+        if (Input.GetKeyDown(KeyCode.LeftControl) && canMove)
         {
-            targetHeight = crouchHeight;
-        }
-        else
-        {
-            targetHeight = defaultHeight;
+            isCrouching = !isCrouching; // Toggle crouching
+            targetHeight = isCrouching ? crouchHeight : defaultHeight;
         }
 
         // Smoothly adjust height
         characterController.height = Mathf.Lerp(characterController.height, targetHeight, crouchTransitionSpeed * Time.deltaTime);
 
         // Adjust speed while crouching
-        bool isCrouching = Mathf.Abs(characterController.height - crouchHeight) < 0.1f;
         if (isCrouching)
         {
             isCurrentlyRunning = false; // Cannot run while crouching
