@@ -73,6 +73,21 @@ public class PlayerMovement : MonoBehaviour
             targetHeight = isCrouching ? crouchHeight : defaultHeight;
         }
 
+        // Check if there's a surface above the player when crouching
+        if (isCrouching)
+        {
+            var castOrigin = transform.position + new Vector3(0, characterController.height / 2, 0); // raycasting to check when the player height
+            if (Physics.Raycast(castOrigin, Vector3.up, out RaycastHit hit, 0.2f))
+            {
+                var distanceToCeiling = hit.point.y - castOrigin.y;
+                targetHeight = Mathf.Max
+                (
+                    characterController.height + distanceToCeiling - 0.1f,
+                    crouchHeight
+                );
+            }
+        }
+
         // Smoothly adjust height
         characterController.height = Mathf.Lerp(characterController.height, targetHeight, crouchTransitionSpeed * Time.deltaTime);
 
@@ -179,3 +194,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
+
