@@ -14,9 +14,9 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 0.80784315}
-  m_FogMode: 3
+  m_FogMode: 2
   m_FogDensity: 0.1
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -20077,7 +20077,7 @@ Transform:
   m_GameObject: {fileID: 607661338}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.96, y: -2.883, z: -61.91}
+  m_LocalPosition: {x: 3.912, y: -2.883, z: -61.556}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43695,7 +43695,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317364548}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a3defbc25b3fdb488f4dd087f96fd0b, type: 3}
   m_Name: 
@@ -43704,6 +43704,23 @@ MonoBehaviour:
   doorMoveDistance: 10
   doorMoveDelay: 1
   vialScript: {fileID: 2012247008}
+--- !u!114 &1317364559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317364548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6a9daa2442b804f885bde39cdbfebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position1: {x: 11.905, y: 1.36, z: 35.747}
+  position2: {x: 11.905, y: 1.36, z: 36.171}
+  position3: {x: 11.905, y: 1.36, z: 36.809}
+  slideSpeed: 0.9
+  glitchIntensity: 0.00001
 --- !u!1001 &1324041249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52028,7 +52045,7 @@ MonoBehaviour:
   position2: {x: 2.121, y: 2.111, z: 27.268}
   position3: {x: 3.25, y: 2.111, z: 27.268}
   slideSpeed: 0.9
-  glitchIntensity: 0.1
+  glitchIntensity: 0.0001
 --- !u!1001 &1668407687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52798,7 +52815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b535ad459d2026647be6fe7e181b4918, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.341
+      value: 36.171
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b535ad459d2026647be6fe7e181b4918, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52853,6 +52870,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b535ad459d2026647be6fe7e181b4918, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1317364555}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b535ad459d2026647be6fe7e181b4918, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1317364559}
   m_SourcePrefab: {fileID: 100100000, guid: b535ad459d2026647be6fe7e181b4918, type: 3}
 --- !u!1001 &1740127627
 PrefabInstance:
