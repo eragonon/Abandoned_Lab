@@ -149,14 +149,14 @@ RectTransform:
   m_GameObject: {fileID: 6629672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4596, y: 1.4596, z: 1.4596}
+  m_LocalScale: {x: 1.6788319, y: 1.6788319, z: 1.6788319}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 295401710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30956253, y: 0.88211113}
   m_AnchorMax: {x: 0.7645625, y: 0.96700007}
-  m_AnchoredPosition: {x: -31, y: 16.5}
+  m_AnchoredPosition: {x: -33, y: 23.552}
   m_SizeDelta: {x: -273.3169, y: -40.000053}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6629674
@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You Win!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 46fe3d8e42a8cbb43b7b5e1b9614e120, type: 2}
-  m_sharedMaterial: {fileID: -4122122647519436668, guid: 46fe3d8e42a8cbb43b7b5e1b9614e120, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a343a402fe93964899112d9d6a304a3, type: 2}
+  m_sharedMaterial: {fileID: 7286335893936834577, guid: 0a343a402fe93964899112d9d6a304a3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1161,14 +1161,14 @@ RectTransform:
   m_GameObject: {fileID: 1273326198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1502, y: 1.1502, z: 1.1502}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 295401710}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.155, y: 0.8017778}
   m_AnchorMax: {x: 0.9305625, y: 0.86455554}
-  m_AnchoredPosition: {x: -480, y: 9.5}
+  m_AnchoredPosition: {x: -547.80493, y: 0.6727905}
   m_SizeDelta: {x: -891.3169, y: -16.000053}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273326200
@@ -1193,8 +1193,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The AI takeover was stopped.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 46fe3d8e42a8cbb43b7b5e1b9614e120, type: 2}
-  m_sharedMaterial: {fileID: -4122122647519436668, guid: 46fe3d8e42a8cbb43b7b5e1b9614e120, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0a343a402fe93964899112d9d6a304a3, type: 2}
+  m_sharedMaterial: {fileID: 7286335893936834577, guid: 0a343a402fe93964899112d9d6a304a3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

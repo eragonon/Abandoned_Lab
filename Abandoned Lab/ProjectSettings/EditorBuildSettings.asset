@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: a7abe343042bb534ba6f3a97e51bbd0e
   - enabled: 1
     path: Assets/Levels/Scenes/LabLevel.unity
-    guid: c97e0da306c1a7046a95f0b3ae34d736
+    guid: 7f235a7cb24160942bf65416b581415d
   - enabled: 1
     path: Assets/Levels/Scenes/Credits.unity
     guid: 3f32aa43082ffe048ab7e9613da5d2dc
