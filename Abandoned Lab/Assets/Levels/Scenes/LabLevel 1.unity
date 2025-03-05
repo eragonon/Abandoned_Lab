@@ -25375,61 +25375,6 @@ MonoBehaviour:
   _frequency: 15
   _camera: {fileID: 1446763479}
   _cameraHolder: {fileID: 832383490}
---- !u!4 &656794946 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7789966939972964483, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
-  m_PrefabInstance: {fileID: 7735971418368389834}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &656794949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656794926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 1fbe15272f749df4bb1113d92de9e0fc, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Xbox Control Scheme
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 1446763483}
---- !u!114 &656794950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656794926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9417ccb52d3256245bde9a86b0b91a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rbD: {fileID: 656794931}
-  speed: 5
-  sprintMultiplier: 10
-  cameraHolder: {fileID: 832383490}
-  cameraTransform: {fileID: 1446763479}
-  lookSpeed: 10
-  flashlight: {fileID: 491297067}
-  playerTransform: {fileID: 656794946}
 --- !u!1001 &658315197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34047,10 +33992,6 @@ PrefabInstance:
     - target: {fileID: 3790293433246609594, guid: d33821f2355419d469c823354e2ee3be, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3828966165608193438, guid: d33821f2355419d469c823354e2ee3be, type: 3}
-      propertyPath: m_TagString
-      value: Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 3966086465715203382, guid: d33821f2355419d469c823354e2ee3be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49723,11 +49664,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!20 &1446763483 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2051662340546501328, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
-  m_PrefabInstance: {fileID: 7735971418368389834}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1454414817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63506,12 +63442,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 656794945}
-    - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 656794949}
-    - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 656794950}
     - targetCorrespondingSourceObject: {fileID: 3412205470868015184, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1446763482}

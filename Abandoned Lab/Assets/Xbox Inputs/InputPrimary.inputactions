@@ -16,7 +16,7 @@
                 },
                 {
                     "name": "Movement",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "5969be3d-612f-448b-92d0-63693c1fb00a",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -25,7 +25,7 @@
                 },
                 {
                     "name": "Camera",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "eac398f5-9f89-4d53-a2dd-5309c3f845d9",
                     "expectedControlType": "Vector2",
                     "processors": "",
@@ -38,7 +38,7 @@
                     "id": "b0db7560-2fe8-4584-be13-7b7bf7f2c7f0",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
                 },
                 {
@@ -47,7 +47,7 @@
                     "id": "0cb094f1-fe66-4660-a073-3e3e92c84888",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
                 },
                 {
@@ -56,15 +56,24 @@
                     "id": "8bdd1207-1dd0-40a8-9e8e-94b26c20f896",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "dd848171-45df-4262-a8ac-00654d61ebfc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "a2381709-4df6-4484-a9e8-a25d979aee27",
-                    "path": "<XInputController>/buttonEast",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Xbox Control Scheme",
@@ -75,8 +84,8 @@
                 {
                     "name": "",
                     "id": "7a988c38-81ca-40d2-9257-27b6cfd65bb3",
-                    "path": "<XInputController>/leftStick",
-                    "interactions": "",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "Tap",
                     "processors": "",
                     "groups": ";Xbox Control Scheme",
                     "action": "Movement",
@@ -141,8 +150,8 @@
                 {
                     "name": "",
                     "id": "0d6a615c-15ad-4e87-8d6c-af2947e53f1e",
-                    "path": "<XInputController>/rightStick",
-                    "interactions": "",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": ";Xbox Control Scheme",
                     "action": "Camera",
@@ -151,7 +160,7 @@
                 },
                 {
                     "name": "2D Vector",
-                    "id": "b1ce0e6d-9ebb-4775-a27a-fd9359793541",
+                    "id": "d442cec2-8e0f-41d2-a093-8aeb999bd3eb",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -162,19 +171,19 @@
                 },
                 {
                     "name": "up",
-                    "id": "533ebd22-11b1-4621-8a77-a6befc79f3d8",
-                    "path": "",
+                    "id": "558979b0-33f3-48eb-8f27-44784ac40ba8",
+                    "path": "<Mouse>/delta/up",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "5f710838-c195-4f67-ad45-7fc158f338ec",
-                    "path": "",
+                    "id": "4de22084-5f07-4319-816e-3d93dd1235ad",
+                    "path": "<Mouse>/delta/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -184,22 +193,22 @@
                 },
                 {
                     "name": "left",
-                    "id": "cccec365-ce86-4d73-b175-e2f7e05c2053",
-                    "path": "",
+                    "id": "522a0fdc-e441-404c-aaf4-202b78734a48",
+                    "path": "<Mouse>/delta/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "32bce697-1273-4bb1-8e6c-7c3cefe230c3",
-                    "path": "",
+                    "id": "f4a2ccdf-d557-4e38-bcbd-79d3a63b6d9c",
+                    "path": "<Mouse>/delta/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Xbox Control Scheme",
                     "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -218,7 +227,7 @@
                 {
                     "name": "",
                     "id": "2e1433dc-35ea-458f-ba50-6ed7fccc15de",
-                    "path": "<XInputController>/buttonWest",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Xbox Control Scheme",
@@ -229,11 +238,22 @@
                 {
                     "name": "",
                     "id": "15edba56-8c5f-4994-9347-4a06d4db8db6",
-                    "path": "<XInputController>/start",
+                    "path": "<Gamepad>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Xbox Control Scheme",
                     "action": "Pause Game",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15661769-d5b9-43fc-bc39-5d175115bb92",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Xbox Control Scheme",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
