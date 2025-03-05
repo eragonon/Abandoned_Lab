@@ -8,8 +8,8 @@ public class XboxControls : MonoBehaviour
 
 
 {
-    [SerializedField] private Rigidbody rbD;
-    [SerializedField] private float speed;
+    [SerializeField] private Rigidbody rbD;
+    [SerializeField] private float speed;
     private Vector2 moveInputValue;
 
     private void OnMove(InputValue value)
@@ -17,6 +17,23 @@ public class XboxControls : MonoBehaviour
         moveInputValue = value.Get<Vector2>();
         Debug.Log(moveInputValue);
     }
+
+    private void OnFlashlight()
+    {
+        Debug.Log("flashlight on");
+    }
+
+    private void OnCrouch()
+    {
+        Debug.Log("crouch on");
+    }
+
+    private void OnSprint()
+    {
+        Debug.Log("sprinting");
+    }
+
+
 
     private void MoveLogicMethod()
     {

@@ -6,15 +6,6 @@
             "id": "9566ce5c-0088-48f0-a592-822b65d17a9e",
             "actions": [
                 {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "370c7a62-7b28-4166-a0ba-7da20476c9b9",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "Crouch",
                     "type": "Button",
                     "id": "337211ca-95f0-44ec-978b-c7ec0d066a5e",
@@ -70,17 +61,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "09bd9b3a-b0c1-4a9a-9fdf-9b1cb9bad2d6",
-                    "path": "<XInputController>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Xbox Control Scheme",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "a2381709-4df6-4484-a9e8-a25d979aee27",
@@ -227,7 +207,7 @@
                 {
                     "name": "",
                     "id": "038e7afc-f21d-4a08-bd02-41df14a578ec",
-                    "path": "<XInputController>/leftStickPress",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Xbox Control Scheme",
