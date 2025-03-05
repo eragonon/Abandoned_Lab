@@ -1807,14 +1807,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104801815}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b37ab2de4dfacb142b7db69cbd59beae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a5e7fae4d075e1d4e8c8548949a8227d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 0.5
-  Loop: 0
+  m_Volume: 1
+  m_Pitch: 0.7
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1953,7 +1953,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 104801815}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 30.87
+  m_Radius: 125
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -18443,11 +18443,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b37ab2de4dfacb142b7db69cbd59beae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a5e7fae4d075e1d4e8c8548949a8227d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 0.5
-  Loop: 0
+  m_Volume: 1
+  m_Pitch: 0.7
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -18586,7 +18586,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 377990831}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 30.87
+  m_Radius: 125
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -25276,7 +25276,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 0.55
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -25358,23 +25358,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &656794945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656794926}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526bb55780eb0144889f7b6120063f69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enable: 1
-  _Amplitude: 0.0068
-  _frequency: 15
-  _camera: {fileID: 1446763479}
-  _cameraHolder: {fileID: 832383490}
 --- !u!4 &656794946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7789966939972964483, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
@@ -43667,11 +43650,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b37ab2de4dfacb142b7db69cbd59beae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a5e7fae4d075e1d4e8c8548949a8227d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 0.5
-  Loop: 0
+  m_Volume: 1
+  m_Pitch: 0.7
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -43810,7 +43793,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1176432581}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 30.87
+  m_Radius: 125
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -63507,9 +63490,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 656794938}
-    - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 656794945}
     - targetCorrespondingSourceObject: {fileID: 8811553971836476530, guid: a32701197c9866b4c8f62e2fa5ef80b5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 656794949}
